@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import fliplr4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-fliplr4d@deno/mod.js';
+import fliplr4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-fliplr4d@v0.1.0-deno/mod.js';
 ```
 
 #### fliplr4d( x )
@@ -87,7 +87,7 @@ var out = fliplr4d( [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] );
 ```javascript
 var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
 import filled4dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled4d-by@deno/mod.js';
-import fliplr4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-fliplr4d@deno/mod.js';
+import fliplr4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-fliplr4d@v0.1.0-deno/mod.js';
 
 var x = filled4dBy( [ 1, 3, 3, 3 ], discreteUniform( -50, 50 ) );
 console.log( x );

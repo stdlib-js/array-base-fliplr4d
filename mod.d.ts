@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,27 +16,31 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Array4D } from '@stdlib/types/array';
 
 /**
-* Reverse the order of elements along the last dimension of a four-dimensional nested input array.
+* Reverses the order of elements along the last dimension of a four-dimensional nested input array.
 *
-* @module @stdlib/array-base-fliplr4d
+* ## Notes
+*
+* -   The function does **not** perform a deep copy of nested array elements.
+*
+* @param x - input nested array
+* @returns output array
 *
 * @example
-* var fliplr4d = require( '@stdlib/array-base-fliplr4d' );
-*
 * var x = [ [ [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] ] ];
 *
 * var out = fliplr4d( x );
 * // returns [ [ [ [ 2, 1 ], [ 4, 3 ], [ 6, 5 ] ] ] ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function fliplr4d<T = unknown>( x: Array4D<T> ): Array4D<T>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = fliplr4d;
